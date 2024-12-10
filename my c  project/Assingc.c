@@ -1,3 +1,5 @@
+
+//   ----------------------------- ASSINGMENT 1 ------------------------------- //
 // 1.write  a program to print hello studant on the screen.
 #include <stdio.h>
 int m1()
@@ -510,7 +512,7 @@ int m41()
 }
 
 // 3.write a program to check whether a given number is an even number or an odd number .
-int m()
+int m42()
 {
     int x;
     printf("Enter a number:\t");
@@ -529,7 +531,7 @@ int m()
 } 
 
 //4.write a program to chek whether a given number is an even number or an odd number without using % operator.
-int main()
+int m43()
 {
     int x;
     printf("Enter your number: ");
@@ -543,4 +545,104 @@ int main()
         printf("Odd Number");
     }
     return 0;
+}
+
+//---------------------------- ASSINGNMENT 8 ----------------------------------//
+
+//1.write a program to check whether a given number is a three digit number or not.
+int m44()
+{
+    int a;
+    printf("Enter a number:\t");
+    scanf("%d",&a);
+    if(a/1000)
+    {
+        printf("%d is not a three digit:\n",a);
+    }
+    else if(a/100)
+    {
+        printf("%d a three digit:\n",a);
+    }
+    else if(a/10)
+    {
+        printf("%d is not three digit:\n",a);
+    }
+       else if(a/1)
+    {
+        printf("%d is not three digit:\n",a);
+    }
+    return 0;
+}
+
+//2.write a progrma to print greater between two numbers print one number if both are same.
+int m45()
+{
+    int a;
+    int b;
+    printf("Enter first Number:\t");
+    scanf("%d",&a);
+     printf("Enter second Number:\t");
+    scanf("%d",&b);
+    if(a>b)
+    {
+        printf("%d is grater",a);
+    }
+    else if(b>a)
+    {
+        printf("%d is grater",b);
+    }
+    else
+    {
+        printf("Both are same");
+    }
+    return 0;
+}
+/*3.write a program to check whether roots of a given qudaratic equation .
+are real & distict & equal or imaginary roots*/
+int m46()
+{
+    int a,b,c;
+    int x,y,z;
+    printf("Enter or qudaratic value:\n");
+    printf("Enter a value:\t");
+    scanf("%d",&a);
+     printf("Enter b value:\t");
+    scanf("%d",&b);
+     printf("Enter c value:\t");
+    scanf("%d",&c);
+
+    if(x=b*b-4*a*c==0) //formula b2-4ac
+    {
+     printf("Real and equal");
+    }
+    else if(y=b*b-4*a*c>=0)
+    {
+     printf("Real and uequal");
+    }
+    else if(z=b*b-4*a*c<0)
+    {
+     printf("There will be no originalt");
+    }
+  return 0;
+}
+
+/*write a program to chek whether a given year is a leap year or not */
+int main()
+{
+   int year;
+   printf("Enter year:");
+   scanf("%d",&year);
+   if(year%4==0)
+   {
+   printf("%d : is a leap year\n",year);
+   }
+   else if(year%100!=0)
+   {
+   printf("%d : is a leap year\n",year);
+   }
+   else if(year%400==0)
+   {
+    printf("%d: is not a leap year\n",year);
+   }
+   return 0;
 }
